@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1024.0" prefWidth="1280.0" styleClass="root" stylesheets="@../RedViper.CSS" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guideMe.Shops.ShopsController">
+   <children>
+      <Pane fx:id="backgroundPane" layoutX="24.0" layoutY="224.0" opacity="0.48" prefHeight="451.0" prefWidth="612.0" style="-fx-background-color: #000000;" visible="false" />
+      <Pane fx:id="profilePane" layoutX="-12.0" layoutY="224.0" prefHeight="466.0" prefWidth="650.0" style=": #000000;">
+         <children>
+            <Label layoutX="115.0" layoutY="31.0" prefHeight="54.0" prefWidth="151.0" styleClass="profileLabel" text="Name:" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="selectedShopName" layoutX="219.0" layoutY="29.0" prefHeight="54.0" prefWidth="606.0" text="data" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="123.0" prefHeight="54.0" prefWidth="237.0" styleClass="profileLabel" text="Location:" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="75.0" prefHeight="54.0" prefWidth="151.0" styleClass="profileLabel" text="Faculty:" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="selectedShopHours" layoutX="219.0" layoutY="77.0" prefHeight="54.0" prefWidth="602.0" text="data" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="selectedShopLocation" layoutX="219.0" layoutY="123.0" prefHeight="54.0" prefWidth="559.0" text="data" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="177.0" prefHeight="54.0" prefWidth="140.0" styleClass="profileLabel" text="Information:" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="selectedShopInfo" layoutX="219.0" layoutY="185.0" prefHeight="276.0" prefWidth="425.0" />
+         </children>
+      </Pane>
+
+      <Button layoutX="997.0" layoutY="919.0" mnemonicParsing="false" onAction="#lockScreen" styleClass="buttonBIG" text="Lock" />
+      <Label layoutX="578.0" layoutY="57.0" prefHeight="63.0" prefWidth="323.0" text="Shops" textFill="WHITE">
+         <font>
+            <Font size="41.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Button layoutX="1135.0" layoutY="917.0" mnemonicParsing="false" onAction="#goToMainMenu" styleClass="buttonBIG" text="Menu" />
+      <ListView fx:id="departmentListView" layoutX="335.0" layoutY="280.0" onMouseClicked="#clickedOnDepartments" prefHeight="200.0" prefWidth="596.0" visible="false" />
+      <GoogleMapView fx:id="mapView" layoutX="679.0" layoutY="243.0" prefHeight="451.0" prefWidth="548.0" />
+   </children>
+</AnchorPane>

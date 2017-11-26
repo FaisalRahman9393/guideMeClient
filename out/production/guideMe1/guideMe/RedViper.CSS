@@ -1,0 +1,35 @@
+/*Red Viper CSS by Faisal Rahman*/
+
+.root{
+    /*For the background*/
+    -fx-background-image: url("../Images/lancaster.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+}
+
+.button-lock{
+    /*For main lock button*/
+        -fx-background-color: linear-gradient(#ff5400, #be1d00);
+        -fx-background-radius: 20;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+        -fx-font-size: 20pt;
+}
+
+HBox, VBox {
+    -fx-alignment: center ;
+}
+
+.fancytext {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-stroke-width: 1;
+    -fx-accent: #0093ff;
+    -fx-focus-color: #0093ff;
+    -fx-color:#00FF00;
+}
+
+.button{
+    /*All general buttons*/
+    /*Insert tile code here*/
+
+}
